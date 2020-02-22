@@ -1,0 +1,143 @@
+@import url(../css/normalize.css);
+@import url(../css/fonts.css);
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper__inner {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    background-color: #2d303a;
+    height: 90px;
+    font-family: 'lato';
+    font-weight: bold;
+    font-size: 25px;
+    justify-content: space-between;
+    padding: 0 40px 0 40px;
+    box-shadow: 0px 5px 0px 0px rgba(50,55,70,1);
+    margin-bottom: 5px;
+}
+
+.main-part__item {
+    padding-left: 40px;
+    padding-right:40px;
+}
+
+.header__item {
+    flex-grow: 1;
+    flex-basis: 50%
+}
+
+h1 {
+    font-size: 25px;
+    color: white;
+    margin: 0;
+    height: 100%;
+    line-height: 87px;
+}
+
+.header__star {
+    color: #f06c64;
+}
+
+.navbar__list {
+    font-size: 12px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+}
+.navbar__item {
+    margin-left: 30px;
+}
+
+.navbar__item a {
+    color: white;
+}
+
+.navbar__item:first-child a {
+    color: #f06c64;
+}
+
+.slider {
+    background-color: #f06c64;
+    height: 595px;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 0px 0px rgba(234,103,107,1);
+    margin-bottom: 5px;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section__slider_item {
+   align-content: center;
+}
+
+.slider__arrow_left {
+    order: -1;
+}
+slider__arrow_right {
+    order: 2;
+}
+
+.services__offer {
+    background-color: #f2f2f2;
+}
+
+.services__header h2 {
+    font-family: lato-black;
+    font-size: 30px;
+    color: #666d89;
+    margin: 0;
+    padding: 60px 0 30px 0;
+}
+
+.services__description {
+    font-size: 18px;
+    color: #767e9e;
+    font-family: "lato-light";
+    padding-bottom: 55px;
+}
+
+.services {
+    flex-wrap: wrap;
+    font-family: lato;
+    font-size: 12 px;
+    color: #767e9e;
+}
+.services__item {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis:33.333333%;
+    flex-direction: column;
+}
+.service__item_name {
+    flex-wrap: wrap;
+    font-family: 'lato-black';
+    font-size: 18px;
+    color: #666d89;
+}
+
+.service__item_icon {
+    height:100%;
+}
+
+.service__item_descr {
+    width: calc(100% - 82px);
+}
