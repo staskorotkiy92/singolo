@@ -5,6 +5,31 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: lato;
+    letter-spacing: -0.2px;
+}
+
+p {
+    font-family: lato-light;
+    color: #767e9e;
+}
+
+h2, h3, p {
+    margin: 0;
+}
+
+h2, h3 {
+    font-family: lato-black;
+    color: #666d89;
+    font-size: 3rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -25,14 +50,82 @@ a {
     margin: 0 auto;
 }
 
+.portfolio {
+    background-color: #2d303a;
+    box-shadow      : 0px 6px 0px 0px #323746;
+    margin-bottom: 6px;
+    padding: 60px 0 45px;
+    letter-spacing: 0;
+}
+
+.portfolio__tags {
+    padding: 17px 0 19px;
+}
+
+.portfolio h2 {
+    padding-bottom: 24px;
+}
+
+.about-us {
+    background-color: #f2f2f2;
+    box-shadow      : 0px 6px 0px 0px #ffffff;
+    margin-bottom: 6px;
+    padding: 60px 0 67px;
+}
+
+.common-introducing {
+    padding: 19px 0 48px;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: -0.2px;
+}
+
 .layout-3-column__item {
     flex-basis: 33.333333%;
 }
 
-.layout-4-column__item {
-    flex-basis: 25%;
+.layout-4-column {
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-p {
-    max-width: 100%;
+.layout-4-column__item {
+    max-width: 25%;
+    margin-bottom: 18px;
+}
+
+.person-name {
+    font-size: 1.8rem;
+    line-height: 18px;
+    color: #666d89;
+    padding-top:18px;
+}
+
+.person-info, tag {
+    font-size:1.2rem;
+    color: #767e9e;
+}
+
+.person-info {
+    font-family: lato;
+    padding: 18px 0 29px;
+}
+
+.tag {
+    padding: 3px 6px 3px 7px;
+    color: #676e8a;
+    border: 1px solid #676e8a;
+    border-radius: 5px;
+    font-size: 1.21rem;
+    margin-right: 9px;
+}
+
+.tag__selected {
+    color: #c5c5c5;
+    border: 1px solid #c5c5c5;
+    padding-right: 7px;
+}
+
+.item__person-links img {
+    margin-right: 8px;
 }
