@@ -189,6 +189,8 @@ slider__arrow_right {
 
 .service__item_performance {
     line-height: 21px;
+    width: 218px;
+    text-align: justify;
 }
 
 .services__item:nth-child(2),
