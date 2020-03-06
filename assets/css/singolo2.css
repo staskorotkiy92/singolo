@@ -110,6 +110,10 @@ a {
     margin-bottom: 18px;
 }
 
+.layout-4-column__item:nth-child(n+13) {
+    display: none;
+}
+
 .person-introduce {
     text-align: justify;
     padding: 15px 0 0 7px;
@@ -159,3 +163,18 @@ a {
 .item__person-links img {
     margin-right: 5px;
 }
+
+ .tag:hover {
+      cursor: pointer;
+      color: #c5c5c5;
+    border: 1px solid #c5c5c5;
+ }
+
+ .link-item {
+     border-radius: 50%;
+ }
+
+ .link-item:hover {
+     cursor: pointer;
+     background-color: rgba(197, 191, 191, 0.2);
+ }
