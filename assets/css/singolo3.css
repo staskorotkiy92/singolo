@@ -100,6 +100,10 @@ textarea::placeholder {
     color         : #f48c8f;
 }
 
+input:invalid {
+    box-shadow: inset 0px 0px 12px 0px rgba(255,10,10,1);
+}
+
 .order-form {
     flex-direction: column;
 }
