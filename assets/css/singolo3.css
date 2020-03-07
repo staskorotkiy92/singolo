@@ -1,0 +1,163 @@
+@import url(../css/normalize.css);
+@import url(../css/fonts.css);
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size     : 1.8rem;
+    font-family   : lato;
+    letter-spacing: -0.2px;
+    color         : #f0d8d9;
+}
+
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h3,
+h2 {
+    font-family: lato-black;
+}
+
+h2 {
+    font-size:3rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1020px;
+    margin   : 0 auto;
+}
+
+.flex {
+    display  : flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 940px;
+    margin   : 0 auto;
+}
+
+.project-order__section {
+    background-color: #f06c64;
+    padding         : 61px 0 51px;
+    margin-bottom: 6px;
+    box-shadow      : 0px 6px 0px 0px #ea676b;
+}
+
+.project-order_info {
+    font-family: lato-light;
+    line-height: 30px;
+    padding: 19px 0 43px;
+}
+
+input,
+textarea {
+    border          : none;
+    background-color: #d6564f;
+    outline         : none;
+    padding         : 0;
+    margin-bottom   : 16px;
+    border-radius   : 5px;
+    width           : 619px;
+     padding-bottom: 7px;
+     padding-left: 15px;
+     color         : #f0d8d9;
+}
+
+textarea {
+    padding: 7px 0 0 15px;
+    resize: none;
+    max-height: 202px;
+}
+
+input {
+    height: 38px;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    font-size     : 1.2rem;
+    line-height   : 22px;
+    vertical-align: middle;
+    color         : #f48c8f;
+}
+
+.order-form {
+    flex-direction: column;
+}
+
+.connection-ways {
+    flex-direction: column;
+    font-family   : lato;
+    font-style    : normal;
+}
+
+.connection-ways__item img {
+    padding-right: 11px;
+}
+
+.contact-info {
+    max-width: 300px;
+    font-size: 1.2rem;
+    line-height: 21px;
+}
+
+.contact-info__title   {
+letter-spacing: 0.2px;
+}
+
+.contact-info__desc {
+    padding: 8px 0 24px 0;
+    text-align: justify;
+}
+
+.project-order__main-field {
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.button {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 80px;
+    top: 324px;
+    left: 630px;
+}
+
+footer {
+    background-color: #2d303a;
+    color: #666d89;
+    font-size: 1.2rem;
+    padding: 21px 0 21px;
+}
+
+.footer__inner  {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-links {
+    min-width: 152px;
+    justify-content: space-between;
+}
