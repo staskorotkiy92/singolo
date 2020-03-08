@@ -1,0 +1,181 @@
+@import url(../css/normalize.css);
+@import url(../css/fonts.css);
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: lato;
+    letter-spacing: -0.2px;
+}
+
+p {
+    font-family: lato-light;
+    color: #767e9e;
+}
+
+h2, h3, p {
+    margin: 0;
+}
+
+h2, h3 {
+    font-family: lato-black;
+    color: #666d89;
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1020px;
+    margin   : 0 auto;
+}
+
+
+.flex {
+    display  : flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.portfolio {
+    background-color: #2d303a;
+    box-shadow      : 0px 6px 0px 0px #323746;
+    margin-bottom: 6px;
+    padding: 60px 0 45px;
+    letter-spacing: 0;
+}
+
+.portfolio h2 {
+    padding-bottom: 24px;
+}
+.portfolio p {
+    letter-spacing: -0.2px;
+}
+
+.portfolio__tags {
+    padding: 17px 0 19px;
+}
+
+.tag {
+    padding: 3px 6px 3px 7px;
+    color: #676e8a;
+    border: 1px solid #676e8a;
+    border-radius: 5px;
+    font-size: 1.21rem;
+    margin-right: 9px;
+}
+
+.tag__selected {
+    color: #c5c5c5;
+    border: 1px solid #c5c5c5;
+    padding-right: 7px;
+}
+
+.tag:hover {
+    cursor: pointer;
+    color: #c5c5c5;
+  border: 1px solid #c5c5c5;
+}
+
+.layout-4-column {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.layout-4-column__item {
+    max-width: 25%;
+    margin-bottom: 18px;
+}
+
+.layout-4-column__item:nth-child(n+13) {
+    display: none;
+}
+
+.about-us {
+    background-color: #f2f2f2;
+    box-shadow      : 0px 6px 0px 0px #ffffff;
+    margin-bottom: 6px;
+    padding: 60px 0 65px;
+}
+
+.common-introducing {
+    padding: 19px 0 45px;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: -0.2px;
+}
+
+.layout-3-column__item {
+    flex-basis: 33.333333%;
+    text-align: justify;
+}
+
+.layout-3-column__item:nth-child(n+2) {
+    text-align: center;
+}
+
+.layout-3-column__item:nth-child(3n+1) {
+    text-align: start;
+}
+
+.layout-3-column__item:nth-child(3n) {
+    text-align: end;
+}
+
+.layout-3-column__item:nth-child(3n+1) .person-introduce {
+    padding-left: 0;
+}
+
+.layout-3-column__item:nth-child(3n) .person-introduce {
+    padding-left: 13px;
+}
+
+.person-introduce {
+    text-align: justify;
+    padding: 15px 0 0 7px;
+}
+
+.person-name {
+    font-size: 1.8rem;
+    line-height: 18px;
+    color: #666d89;
+    white-space: nowrap;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.person-info {
+    font-family: lato;
+    padding: 9px 0 23px;
+    line-height: 21px;
+    width: 300px;
+    font-style: normal;
+    font-size:1.2rem;
+    color: #767e9e;
+}
+
+.item__person-links img {
+    margin-right: 5px;
+}
+
+ .link-item {
+     border-radius: 50%;
+ }
+
+ .link-item:hover {
+     cursor: pointer;
+     background-color: rgba(197, 191, 191, 0.2);
+ }
