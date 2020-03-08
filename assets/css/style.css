@@ -198,6 +198,8 @@ slider__arrow_right {
     line-height: 21px;
     width      : 218px;
     text-align : justify;
+    overflow: hidden;
+    height: 63px;
 }
 
 .services__item:nth-child(2),
