@@ -149,6 +149,16 @@ letter-spacing: 0.2px;
     left: 630px;
 }
 
+.button:hover {
+    cursor: pointer;
+    color:rgb(124, 115, 115);
+}
+
+.button:active {
+    cursor    : pointer;
+    transform : scale(0.9);
+}
+
 footer {
     background-color: #2d303a;
     color: #666d89;
@@ -164,4 +174,12 @@ footer {
 .footer-links {
     min-width: 152px;
     justify-content: space-between;
+}
+
+.footer-links__item  img{
+    border-radius: 50%;
+}
+
+.footer-links__item:hover img {
+    background-color: rgb(90, 86, 86);
 }
