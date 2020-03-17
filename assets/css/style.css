@@ -17,12 +17,15 @@ body {
 
 a {
     text-decoration: none;
+    font-size: inherit;
+    color: inherit;
 }
 
 h2,
 h3,
 p {
     margin: 0;
+    text-align: justify;
 }
 
 .wrapper {
@@ -83,22 +86,19 @@ h3 {
     list-style-type: none;
     padding        : 0;
     margin         : 0;
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding-left: 98px;
     height         : 100%;
     align-items    : center;
     font-weight    : bold;
 }
 
 .navbar__item {
-    margin-left: 29px;
     padding-top: 8px;
-}
-
-.navbar__item a {
     color: white;
 }
 
-.navbar__item:first-child a {
+.navbar__item:hover {
     color: #f06c64;
 }
 
@@ -139,7 +139,7 @@ slider__arrow_right {
 .services__offer {
     background-color: #f2f2f2;
     box-shadow      : 0px 5px 0px 0px rgba(255, 255, 255, 1);
-    margin-bottom   : 5px;
+    margin-bottom   : 6px;
     padding-bottom  : 30px;
 }
 
@@ -164,6 +164,7 @@ slider__arrow_right {
     font-family   : "lato-light";
     padding-bottom: 44px;
     line-height   : 30px;
+    text-align: justify;
 }
 
 .services {
@@ -221,7 +222,7 @@ slider__arrow_right {
     background-color: #2d303a;
     box-shadow      : 0px 6px 0px 0px #323746;
     margin-bottom   : 6px;
-    padding         : 60px 0 45px;
+    padding         : 60px 0 47px;
     letter-spacing  : 0;
 }
 
@@ -257,6 +258,10 @@ slider__arrow_right {
     font-size     : 3rem;
 }
 
+.about-us h2 {
+    padding-bottom: 20px;
+}
+
 .portfolio p,
 .about-us p {
     letter-spacing: -0.2px;
@@ -271,7 +276,12 @@ slider__arrow_right {
 
 .layout-4-column__item {
     max-width    : 25%;
-    margin-bottom: 18px;
+    margin-bottom: 17px;
+}
+
+.layout-4-column__item img {
+    height: 100%;
+    max-width: 220px;
 }
 
 .layout-4-column__item:nth-child(n+13) {
@@ -282,11 +292,11 @@ slider__arrow_right {
     background-color: #f2f2f2;
     box-shadow      : 0px 6px 0px 0px #ffffff;
     margin-bottom   : 6px;
-    padding         : 60px 0 65px;
+    padding         : 59px 0 65px;
 }
 
 .common-introducing {
-    padding       : 19px 0 45px;
+    padding       : 0 0 45px;
     line-height   : 30px;
     text-align    : justify;
     letter-spacing: -0.2px;
@@ -323,7 +333,7 @@ slider__arrow_right {
 }
 
 .person-name {
-    font-size  : 1.8rem;
+    font-size  : 1.85rem;
     line-height: 18px;
     color      : #666d89;
     white-space: nowrap;
@@ -363,7 +373,7 @@ slider__arrow_right {
 
 .project-order__section {
     background-color: #f06c64;
-    padding         : 61px 0 51px;
+    padding         : 64px 0 51px;
     margin-bottom   : 6px;
     box-shadow      : 0px 6px 0px 0px #ea676b;
     color           : #f0d8d9;
