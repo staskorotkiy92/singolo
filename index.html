@@ -15,15 +15,15 @@
     <header>
       <div class="container flex header">
         <div class="logo header__item">
-          <h1>SINGOLO<span class='header__star'>*</span></h1>
+          <h1><a name = "Home">SINGOLO</a><span class='header__star'>*</span></h1>
         </div>
         <nav class="navbar header__item">
           <ul class="navbar__list flex">
-            <li class="navbar__item"><a href="#" class="nav__link">HOME</a></li>
-            <li class="navbar__item"><a href="#" class="nav__link">SERVICES</a></li>
-            <li class="navbar__item"><a href="#" class="nav__link">PORTFOLIO</a></li>
-            <li class="navbar__item"><a href="#" class="nav__link">ABOUT</a></li>
-            <li class="navbar__item"><a href="#" class="nav__link">CONTACT</a></li>
+            <li class="navbar__item"><a href="#Home" class="nav__link">HOME</a></li>
+            <li class="navbar__item"><a href="#Our Services" class="nav__link">SERVICES</a></li>
+            <li class="navbar__item"><a href="#Portfolio" class="nav__link">PORTFOLIO</a></li>
+            <li class="navbar__item"><a href="#About" class="nav__link">ABOUT</a></li>
+            <li class="navbar__item"><a href="#Contacts" class="nav__link">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -46,7 +46,7 @@
       <section class="services__offer main-part__item">
         <div class="container flex">
           <div class="services__header">
-            <h2>Our Services</h2>
+            <h2><a name = "Our Services">Our Services</a></h2>
           </div>
           <article class="services__description">
             <span>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
@@ -136,7 +136,7 @@
       </section>
       <section class="portfolio main-part__item">
         <div class="container">
-          <h2 class="portfolio-title">Portfolio</h2>
+          <h2 class="portfolio-title"><a name  = "Portfolio">Portfolio</a></h2>
           <p class="portfolio-desc">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio
             sem nec elit.</p>
           <div class="flex portfolio__tags">
@@ -187,7 +187,7 @@
       </section>
       <section class="about-us main-part__item">
         <div class="container">
-          <h2>About Us</h2>
+          <h2><a name = "About">About Us</a></h2>
           <p class="common-introducing">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
             mollis, non commodo luctus,
             nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
@@ -256,15 +256,15 @@
           <div class="flex project-order__main-field">
 
             <form action="https://www.w3schools.com/action_page.php" method="post" class="flex order-form">
-              <input type="text" name="name" id ="name" required minlength="3" placeholder="Name (Required)">
-              <input type="email" name="email" id= "email" required placeholder="Email (Required)">
-              <input type="text" name="subject" id = "subject" placeholder="Subject">
+              <input type="text" name="name" id="name" required minlength="3" placeholder="Name (Required)">
+              <input type="email" name="email" id="email" required placeholder="Email (Required)">
+              <input type="text" name="subject" id="subject" placeholder="Subject">
               <textarea name="description" id="desc" cols="30" rows="10"
                 placeholder="Describe your project in detail.."></textarea>
-              <input type="submit" id = "submit" class="button" value="Sumbit">
+              <input type="submit" id="submit" class="button" value="Sumbit">
             </form>
             <div class="contact-info">
-              <h3 class="contact-info__title">Contact Information</h3>
+              <h3 class="contact-info__title"><a name = "Contacts">Contact Information</a></h3>
               <p class="contact-info__desc">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
                 Fusce vitae aliquam tellus.
                 Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
@@ -316,6 +316,7 @@
       </div>
     </footer>
   </div>
+  <script src="index.js"></script>
 </body>
 
 </html>

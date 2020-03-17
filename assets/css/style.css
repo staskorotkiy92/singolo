@@ -7,6 +7,7 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -57,6 +58,9 @@ header {
     justify-content: space-between;
 }
 
+.navbar {
+    padding-left: 98px;
+}
 
 .header__item {
     flex-grow : 1;
@@ -87,7 +91,6 @@ h3 {
     padding        : 0;
     margin         : 0;
     justify-content: space-between;
-    padding-left: 98px;
     height         : 100%;
     align-items    : center;
     font-weight    : bold;
@@ -96,9 +99,11 @@ h3 {
 .navbar__item {
     padding-top: 8px;
     color: white;
+    transform : scale(1);
+    transition: transform 0.2s ease-in-out 0.1s;
 }
 
-.navbar__item:hover {
+.navbar__item:not(.active):hover {
     color: #f06c64;
 }
 
@@ -144,7 +149,7 @@ slider__arrow_right {
 }
 
 .slider__arrow:hover,
-.navbar__item:hover {
+.navbar__item:not(.active):hover {
     cursor    : pointer;
     transform : scale(1.2);
     transition: transform 0.2s ease-in-out 0.1s;
@@ -501,3 +506,10 @@ footer {
 .footer-links__item:hover img {
     background-color: rgb(90, 86, 86);
 }
+
+ .active {
+    color: #f06c64;
+    cursor    : pointer;
+    transform : scale(1);
+    transition: transform 0.2s ease-in-out 0.1s;
+    }
