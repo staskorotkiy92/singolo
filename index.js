@@ -3,13 +3,35 @@ const BUTTON = document.getElementById('submit');
 const CLOSE_BUTTON = document.getElementById('close_btn');
 const FORM = document.getElementById('order-form');
 
-                 //Navigation menu
+//Navigation menu
+/*
 MENU.addEventListener('click', function (event) {
     MENU.querySelectorAll('li').forEach((item) => {
         item.classList.remove('active');
     });
     event.target.closest('.navbar__item').classList.add('active');
 });
+*/
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event) {
+    let currentPos = window.scrollY;
+    let sections = document.querySelectorAll('main>section');
+    let links = document.querySelectorAll('.navbar a');
+    console.log(sections);
+    console.log(links);
+    sections.forEach(item => {
+        if (item.offsetTop <= currentPos && (item.offsetTop + item.offsetHeight) > currentPos) {
+            links.forEach(link => {
+                link.classList.remove('active');
+                if (item.getAttribute('id') === link.getAttribute('href').substring(1)) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+}
 
 
 //        Form processing
@@ -49,7 +71,7 @@ CLOSE_BUTTON.addEventListener('click', function (event) {
 
 /* BUTTON.addEventListener('click', function (event) {
    // if (!document.getElementById('name').required.value === true)  return;
-  
+
    event.preventDefault();
     let subject;
     let description;
