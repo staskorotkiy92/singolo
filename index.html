@@ -11,23 +11,23 @@
 </head>
 
 <body>
-  <div class="submit-answer hidden" id = "msg_after_submit">
+  <div class="submit-answer hidden" id="msg_after_submit">
     <div class="answer-info">
-      <p class="submit-answer__message notification__message" id = "notification">
+      <p class="submit-answer__message notification__message" id="notification">
         Письмо отправлено
       </p><br>
-    <p class="submit-answer__message theme" id = "theme"> 
-    </p><br>
-    <p class="submit-answer__message description__message" id = "description"> 
-    </p><br>
-  </div>
-    <button class="button" id = "close_btn">OK</button>
+      <p class="submit-answer__message theme" id="theme">
+      </p><br>
+      <p class="submit-answer__message description__message" id="description">
+      </p><br>
+    </div>
+    <button class="button" id="close_btn">OK</button>
   </div>
   <div class="wrapper">
     <header>
       <div class="container flex header">
         <div class="logo header__item">
-          <h1><a name = "Home">SINGOLO</a><span class='header__star'>*</span></h1>
+          <h1><a>SINGOLO<span class='header__star'>*</span></a></h1>
         </div>
         <nav class="navbar header__item">
           <ul class="navbar__list flex">
@@ -41,11 +41,23 @@
       </div>
     </header>
     <main class="main">
-      <section class="slider main-part__item">
+      <section class="slider main-part__item" id="Home">
         <div class="container flex slider__section">
-          <div class="slider__img section__slider_item"><img src="assets/images/slider/vPhone.png" alt="Phone Images">
-          </div>
-          <div class="slider__img section__slider_item"><img src="assets/images/slider/hPhone.png" alt="Phone Images">
+          <div class="slider-container flex">
+            <div class="slider-item slide-item_active section__slider_item flex slide-one">
+              <div class="slider__img"><img src="assets/images/slider/vPhone.png" alt="Phone Images">
+              </div>
+              <div class="slider__img"><img src="assets/images/slider/hPhone.png" alt="Phone Images">
+              </div>
+            </div>
+            <div class="slider-item section__slider_item flex slide-two">
+              <div class="slider__img"><img src="assets/slider images/slider-content.png" alt="Phone Images">
+              </div>
+              <div class="slider__img"><img src="assets/slider images/slider-content-2.png" alt="Phone Images">
+              </div>
+              <div class="slider__img"><img src="assets/slider images/slider-content-1.png" alt="Phone Images">
+              </div>
+            </div>
           </div>
           <div class="slider__arrow slider__arrow_left section__slider_item">
             <img src="assets/images/slider/chev_left.svg" alt="arrow_left">
@@ -55,10 +67,10 @@
           </div>
         </div>
       </section>
-      <section class="services__offer main-part__item">
+      <section class="services__offer main-part__item" id="Our Services">
         <div class="container flex">
           <div class="services__header">
-            <h2><a name = "Our Services">Our Services</a></h2>
+            <h2>Our Services</h2>
           </div>
           <article class="services__description">
             <span>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
@@ -146,9 +158,9 @@
           </div>
         </div>
       </section>
-      <section class="portfolio main-part__item">
+      <section class="portfolio main-part__item" id="Portfolio">
         <div class="container">
-          <h2 class="portfolio-title"><a name  = "Portfolio">Portfolio</a></h2>
+          <h2 class="portfolio-title">Portfolio</h2>
           <p class="portfolio-desc">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio
             sem nec elit.</p>
           <div class="flex portfolio__tags">
@@ -197,9 +209,9 @@
           </div>
         </div>
       </section>
-      <section class="about-us main-part__item">
+      <section class="about-us main-part__item" id="About">
         <div class="container">
-          <h2><a name = "About">About Us</a></h2>
+          <h2>About Us</h2>
           <p class="common-introducing">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
             mollis, non commodo luctus,
             nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
@@ -257,7 +269,7 @@
           </div>
         </div>
       </section>
-      <section class="project-order__section main-part__item">
+      <section class="project-order__section main-part__item" id="Contacts">
         <div class="container">
           <h2 class="project-order__title">Get a Quote</h2>
           <p class="project-order_info">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
@@ -267,7 +279,8 @@
           </p>
           <div class="flex project-order__main-field">
 
-            <form action="https://www.w3schools.com/action_page.php" method="post" class="flex order-form" id = "order-form">
+            <form action="https://www.w3schools.com/action_page.php" method="post" class="flex order-form"
+              id="order-form">
               <input type="text" name="name" id="name" required minlength="3" placeholder="Name (Required)">
               <input type="email" name="email" id="email" required placeholder="Email (Required)">
               <input type="text" name="subject" id="subject" placeholder="Subject">
@@ -275,9 +288,9 @@
                 placeholder="Describe your project in detail.."></textarea>
               <input type="submit" id="submit" class="button" value="Sumbit">
             </form>
-            
+
             <div class="contact-info">
-              <h3 class="contact-info__title"><a name = "Contacts">Contact Information</a></h3>
+              <h3 class="contact-info__title">Contact Information</h3>
               <p class="contact-info__desc">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
                 Fusce vitae aliquam tellus.
                 Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
