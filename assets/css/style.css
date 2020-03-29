@@ -6,7 +6,8 @@
 }
 
 html {
-    font-size: 10px;
+    font-size      : 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,20 +18,20 @@ body {
 
 a {
     text-decoration: none;
-    font-size: inherit;
-    color: inherit;
+    font-size      : inherit;
+    color          : inherit;
 }
 
 h2,
 h3,
 p {
-    margin: 0;
+    margin    : 0;
     text-align: justify;
 }
 
 .wrapper {
-    max-width: 1020px;
-    margin   : 0 auto;
+    /* max-width: 1020px;
+    margin      : 0 auto;  */
 }
 
 .flex {
@@ -42,11 +43,15 @@ header {
     background-color: #2d303a;
     box-shadow      : 0px 5px 0px 0px rgba(50, 55, 70, 1);
     margin-bottom   : 5px;
+    position        : fixed;
+    width           : 100%;
+    z-index: 100;
 }
 
 .container {
-    max-width: 940px;
+    max-width: 1020px;
     margin   : 0 auto;
+    padding  : 0 40px 0;
 }
 
 .header {
@@ -57,6 +62,9 @@ header {
     justify-content: space-between;
 }
 
+.navbar {
+    padding-left: 98px;
+}
 
 .header__item {
     flex-grow : 1;
@@ -87,7 +95,6 @@ h3 {
     padding        : 0;
     margin         : 0;
     justify-content: space-between;
-    padding-left: 98px;
     height         : 100%;
     align-items    : center;
     font-weight    : bold;
@@ -95,11 +102,17 @@ h3 {
 
 .navbar__item {
     padding-top: 8px;
-    color: white;
+    color      : white;
+    transform  : scale(1);
+    transition : transform 0.2s ease-in-out 0.1s;
 }
 
-.navbar__item:hover {
+.navbar__item:not(.active):hover {
     color: #f06c64;
+}
+
+main {
+    padding-top: 95px;
 }
 
 .slider {
@@ -124,9 +137,35 @@ h3 {
     padding-right: 17px;
 }
 
-section__slider_item {
-    align-content: center;
+.slider-item {
+    position: relative;
+    display: none;
 }
+
+.slide-two {
+    justify-content: center;
+
+}
+
+
+.slider-item.slide-item_active {
+    display: flex;
+}
+
+.section__slider_item {
+    align-content: center;
+    align-content  : center;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+.slide-one .slider__img:last-child {
+    margin-left: 74px;
+}
+
+.slide-two.slider__img {
+    margin: 0;
+    }
 
 .slider__arrow_left {
     order: -1;
@@ -144,7 +183,7 @@ slider__arrow_right {
 }
 
 .slider__arrow:hover,
-.navbar__item:hover {
+.navbar__item:not(.active):hover {
     cursor    : pointer;
     transform : scale(1.2);
     transition: transform 0.2s ease-in-out 0.1s;
@@ -164,7 +203,7 @@ slider__arrow_right {
     font-family   : "lato-light";
     padding-bottom: 44px;
     line-height   : 30px;
-    text-align: justify;
+    text-align    : justify;
 }
 
 .services {
@@ -199,8 +238,8 @@ slider__arrow_right {
     line-height: 21px;
     width      : 218px;
     text-align : justify;
-    overflow: hidden;
-    height: 63px;
+    overflow   : hidden;
+    height     : 63px;
 }
 
 .services__item:nth-child(2),
@@ -280,7 +319,7 @@ slider__arrow_right {
 }
 
 .layout-4-column__item img {
-    height: 100%;
+    height   : 100%;
     max-width: 220px;
 }
 
@@ -422,6 +461,18 @@ input:invalid {
     box-shadow: inset 0px 0px 12px 0px rgba(255, 10, 10, 1);
 }
 
+@-webkit-keyframes autofill {
+    to {
+        color     : inherit;
+        background: #d6564f;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name     : autofill;
+    -webkit-animation-fill-mode: both;
+}
+
 .order-form {
     flex-direction: column;
 }
@@ -443,6 +494,7 @@ input:invalid {
 }
 
 .contact-info__title {
+    font-size     : 1.8rem;
     letter-spacing: 0.2px;
 }
 
@@ -500,4 +552,31 @@ footer {
 
 .footer-links__item:hover img {
     background-color: rgb(90, 86, 86);
+}
+
+.active {
+    color     : #f06c64;
+    cursor    : pointer;
+    transform : scale(1);
+    transition: transform 0.2s ease-in-out 0.1s;
+}
+
+.submit-answer {
+    position        : fixed;
+    width           : 100vw;
+    height          : 100vh;
+    background-color: #0008;
+    z-index         : 3;
+}
+
+.hidden {
+    display: none;
+}
+
+.answer-info {
+    position : absolute;
+    left     : 50%;
+    top      : 50%;
+    transform: translate(-50%, -100%);
+    z-index  : 4;
 }
